@@ -94,7 +94,7 @@ const HireMe = () => {
                 </div> */}
 
                 <div className="mt-16">
-                    <h2 className="text-3xl text-accent mb-4 text-center">Get in Touch</h2>
+                    <h2 className="text-3xl text-accent mb-4 text-center">Let's work together...</h2>
                     <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl" onSubmit={submitForm}>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <Input type="text" name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} />

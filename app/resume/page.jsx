@@ -1,7 +1,8 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaGit, FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiVisualstudiocode, SiMongodb , SiMysql, SiDotnet } from "react-icons/si";
+import React, { useState } from 'react';
+import { FaHtml5, FaCss3, FaJs, FaReact, FaGit, FaNodeJs, FaJava, FaDocker, FaAws } from "react-icons/fa";
+import { SiTailwindcss, SiNextdotjs, SiVisualstudiocode, SiMongodb , SiMysql, SiGraphql, SiSpringboot, SiExpress, SiKubernetes, SiHibernate,  } from "react-icons/si";
 
 const about = {
   title: 'About me',
@@ -45,7 +46,7 @@ const about = {
 const experience = {
   icon: '/assets/resume/badge.svg',
   title: 'My Experience',
-  description: 'Collaborated with senior developers to develop and maintain web applications using Java, JavaScript/TypeScript, HTML/CSS, and modern JavaScript frameworks like React and Next.js. Practiced unit testing for code reliability and quality, fixed bugs, and implemented small features while creating technical documentation and SQL queries for database interactions. Contributed to the development of ASAP Tickets and Skylux Travel using Next.js, and developed backend services and RESTful APIs with Java. Utilized version control systems such as Git and GitHub/GitLab, and worked on CI/CD processes, while also leveraging tools like VS Code, Jira, Slack, npm/Yarn, Postman, Jenkins, Docker, and ESLint. Participated in daily stand-ups, sprint planning, retrospective meetings, and Pair Programming.',
+  description: 'Collaborated with senior developers to develop and maintain web applications for ASAP Tickets and Skylux Travel. Ensured code reliability and quality through unit testing, bug fixing, and developed new features. Worked with databases such as MongoDB and MariaDB to store and retrieve data.  Utilized my skills in TypeScript, GraphQL and REST to create efficient and scalable applications. My role also involved working on CI/CD processes with Docker and using Git for repository hosting and collaboration. Participated actively in daily stand-ups, sprint planning, retrospective meetings, and pair programming to ensure effective team collaboration and project progression. Collaborate with cross-functional teams to design and implement software solutions using technologies like Next.js, Node.js, and React.',
   items: [
     {
       company: "Freelance",
@@ -71,7 +72,7 @@ const experience = {
 };
 
 const education = {
-  icon: '/assets/resume/badge.svg',
+  icon: '/assets/resume/cap.svg',
   title: 'My Education',
   items: [
     {
@@ -82,32 +83,38 @@ const education = {
     {
       institution: "Oracle",
       degree: "Java Foundations Associate (1Z0-811)",
-      duration: "2024"
+      duration: "2024",
+      certificate: '/assets/resume/oracle.png'
     },
     {
       institution: "Code Institute",
       degree: "AACC Certified",
-      duration: "2024"
+      duration: "2024",
+      certificate: '/assets/resume/aacc.png'
     },
     {
       institution: "Online Course Platform - Guvi",
       degree: "Full Stack Development Bootcamp",
-      duration: "2022"
+      duration: "2022",
+      certificate: '/assets/resume/guvi.png'
     },
     {
       institution: "Riga Technical University",
       degree: "Master of Science",
-      duration: "2018 - 2020"
+      duration: "2018 - 2020",
+      certificate: '/assets/resume/aviation.png'
     },
     {
       institution: "Nehru Institute of Engineering and Technology",
       degree: "Bachelor's in Engineering",
-      duration: "2011 - 2015"
+      duration: "2011 - 2015",
+      certificate: '/assets/resume/aeronautical.png'
     },
     {
       institution: "Carmel H.S.S. Chalakudy",
       degree: "High School Diploma in Computer Science",
-      duration: "2009 - 2011"
+      duration: "2009 - 2011",
+      certificate: '/assets/resume/plustwo.png'
     },
   ]
 };
@@ -128,6 +135,10 @@ const skills = {
       name: 'javascript',
     },
     {
+      icon: <FaJava />,
+      name: 'Java',
+    },
+    {
       icon: <FaReact />,
       name: 'react.js',
     },
@@ -136,12 +147,12 @@ const skills = {
       name: 'next.js',
     },
     {
-      icon: <SiDotnet />,
-      name: '.NET',
-    },
-    {
       icon: <FaNodeJs />,
       name: 'node.js',
+    },
+    {
+      icon: <SiExpress />,
+      name: 'Ecpress.js',
     },
     {
       icon: <SiTailwindcss />,
@@ -163,9 +174,74 @@ const skills = {
       icon: <SiMysql />,
       name: 'MySQL',
     },
+    {
+      icon: <FaAws />,
+      name: 'AWS',
+    },
+    {
+      icon: <SiGraphql />,
+      name: 'GraphQL',
+    },
+    {
+      icon: <FaDocker />,
+      name: 'Docker',
+    },
   ]
 
 }
+
+const onlinecourses = {
+  title: 'Online Course Certifications',
+  items: [
+    {
+      certificate: '/assets/resume/softwaredevelopment.png',
+      name: 'Software Development',
+    },
+    {
+      certificate: '/assets/resume/git.png',
+      name: 'GIT',
+    },
+    {
+      certificate: '/assets/resume/javafundamentals.png',
+      name: 'Java Fundamentals',
+    },
+    {
+      certificate: '/assets/resume/sqlfundamentals.png',
+      name: 'SQL Fundamentals',
+    },
+    {
+      certificate: '/assets/resume/sql.png',
+      name: 'SQL',
+    },
+    {
+      certificate: '/assets/resume/postgersql.png',
+      name: 'PostgerSQL',
+    },
+    {
+      certificate: '/assets/resume/python.png',
+      name: 'Python',
+    },
+    {
+      certificate: '/assets/resume/salesforce.png',
+      name: 'Salesforce Administrator',
+    },
+  ],
+};
+
+const achievements = {
+  title: 'Achievements',
+  items: [
+    {
+      certificate: '/assets/resume/javaexplorer.png',
+      name: 'Java Explorer',
+    },
+    {
+      certificate: '/assets/resume/greatstack.png',
+      name: 'GreatStack',
+    },
+  ]
+};
+
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -176,6 +252,9 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 
 const Resume = () => {
+
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   return (
     <motion.div 
     initial={{opacity: 0}}
@@ -192,6 +271,8 @@ const Resume = () => {
             <TabsTrigger value= "experience">Experience</TabsTrigger>
             <TabsTrigger value= "education">Education</TabsTrigger>
             <TabsTrigger value= "skills">Skills</TabsTrigger>
+            <TabsTrigger value="onlinecourses">Certifications</TabsTrigger>
+            <TabsTrigger value="achievements">Achievement</TabsTrigger>
             <TabsTrigger value= "about">About me</TabsTrigger>
           </TabsList>
           <div className="min-h-[70vh] w-full ">
@@ -199,7 +280,7 @@ const Resume = () => {
 
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{experience.title}</h3>
+                <h3 className="text-4xl font-bold">{experience.title}</h3> 
                 <p className="max-w-[700px] text-white/60 mx-auto xl:mx-0 text-justify ">{experience.description}</p>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
@@ -229,7 +310,16 @@ const Resume = () => {
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => {
                       return (
-                        <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex-col justify-center items-center lg:items-start gap-1">
+                        <li 
+                          key={index} 
+                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex-col justify-center items-center lg:items-start gap-1 overflow-hidden"
+                          onMouseEnter={() => setHoveredIndex(index)}
+                          onMouseLeave={() => setHoveredIndex(null)}>
+                            {hoveredIndex === index && item.certificate && (
+                          <div className="relative h-[160px] flex justify-center items-center">
+                            <img src={item.certificate} alt="Certificate" className="max-w-full max-h-full object-contain rounded-lg" />
+                          </div>
+                          )}
                         <span className="text-accent">{item.duration}</span>
                         <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
                         <div className="flex items-center gap-3">
@@ -270,6 +360,60 @@ const Resume = () => {
                   })}
                 </ul>
               </div>
+            </TabsContent>
+
+
+            <TabsContent value="onlinecourses" className="w-full h-full">
+      <div className="flex flex-col gap-[30px]">
+        <div className="flex flex-col gap-[30px] text-center xl:text-left">
+          <h3 className="text-4xl font-bold mb-10">{onlinecourses.title}</h3>
+        </div>
+        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 xl:gap-[30px]">
+          {onlinecourses.items.map((item, index) => {
+            return (
+              <li key={index}>
+                <TooltipProvider delayDuration={100}>
+                  <Tooltip>
+                    <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                      <img src={item.certificate} alt={item.name} className="h-full w-auto rounded-xl object-contain" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p className="capitalize">{item.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+            </TabsContent>
+
+
+            <TabsContent value="achievements" className="w-full h-full">
+      <div className="flex flex-col gap-[30px]">
+        <div className="flex flex-col gap-[30px] text-center xl:text-left">
+          <h3 className="text-4xl font-bold mb-10">{achievements.title}</h3>
+        </div>
+        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 xl:gap-[30px]">
+          {achievements.items.map((item, index) => {
+            return (
+              <li key={index}>
+                <TooltipProvider delayDuration={100}>
+                  <Tooltip>
+                    <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                      <img src={item.certificate} alt={item.name} className="h-full w-auto rounded-xl object-contain" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p className="capitalize">{item.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
             </TabsContent>
 
 
