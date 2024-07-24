@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaGit, FaNodeJs, FaJava, FaDocker, FaAws } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiVisualstudiocode, SiMongodb , SiMysql, SiGraphql, SiSpringboot, SiExpress, SiKubernetes, SiHibernate,  } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiVisualstudiocode, SiMongodb , SiMysql, SiGraphql, SiSpringboot, SiExpress, SiKubernetes, SiHibernate, SiPhp  } from "react-icons/si";
 
 const about = {
   title: 'About me',
@@ -131,12 +131,28 @@ const skills = {
       name: 'css 3',
     },
     {
+      icon: <SiTailwindcss />,
+      name: 'tailwind.css',
+    },
+    {
       icon: <FaJs />,
       name: 'javascript',
     },
     {
       icon: <FaJava />,
       name: 'Java',
+    },
+    {
+      icon: <SiSpringboot />,
+      name: 'Spring Boot',
+    },
+    {
+      icon: <SiHibernate />,
+      name: 'Hibernate',
+    },
+    {
+      icon: <SiPhp />,
+      name: 'PHP',
     },
     {
       icon: <FaReact />,
@@ -153,10 +169,6 @@ const skills = {
     {
       icon: <SiExpress />,
       name: 'Ecpress.js',
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: 'tailwind.css',
     },
     {
       icon: <FaGit />,
@@ -186,6 +198,10 @@ const skills = {
       icon: <FaDocker />,
       name: 'Docker',
     },
+    {
+      icon: <SiKubernetes />,
+      name: 'Kubernetes',
+    },
   ]
 
 }
@@ -193,6 +209,10 @@ const skills = {
 const onlinecourses = {
   title: 'Online Course Certifications',
   items: [
+    {
+      certificate: '/assets/resume/springboot.png',
+      name: 'Spring Boot',
+    },
     {
       certificate: '/assets/resume/softwaredevelopment.png',
       name: 'Software Development',
@@ -375,7 +395,7 @@ const Resume = () => {
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
                     <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                      <img src={item.certificate} alt={item.name} className="h-full w-auto rounded-xl object-contain" />
+                      <img src={item.certificate} alt={item.name} className="h-full w-auto rounded-xl object-contain hover:h-[300px]" />
                     </TooltipTrigger>
                     <TooltipContent>
                       <p className="capitalize">{item.name}</p>
