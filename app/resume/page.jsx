@@ -54,7 +54,7 @@ const experience = {
       duration: "Feb 2024 - Present"
     },
     {
-      company: "Innovative Travel Solutions",
+      company: "Dyninno Group - Innovative Travel Solutions",
       position: "Junior Full Stack Developer",
       duration: "Jun 2022 - Jan 2024"
     },
@@ -139,22 +139,6 @@ const skills = {
       name: 'javascript',
     },
     {
-      icon: <FaJava />,
-      name: 'Java',
-    },
-    {
-      icon: <SiSpringboot />,
-      name: 'Spring Boot',
-    },
-    {
-      icon: <SiHibernate />,
-      name: 'Hibernate',
-    },
-    {
-      icon: <SiPhp />,
-      name: 'PHP',
-    },
-    {
       icon: <FaReact />,
       name: 'react.js',
     },
@@ -169,6 +153,14 @@ const skills = {
     {
       icon: <SiExpress />,
       name: 'Ecpress.js',
+    },
+    {
+      icon: <FaJava />,
+      name: 'Java',
+    },
+    {
+      icon: <SiSpringboot />,
+      name: 'Spring Boot',
     },
     {
       icon: <FaGit />,
@@ -191,16 +183,8 @@ const skills = {
       name: 'AWS',
     },
     {
-      icon: <SiGraphql />,
-      name: 'GraphQL',
-    },
-    {
       icon: <FaDocker />,
       name: 'Docker',
-    },
-    {
-      icon: <SiKubernetes />,
-      name: 'Kubernetes',
     },
   ]
 
@@ -258,6 +242,10 @@ const achievements = {
     {
       certificate: '/assets/resume/greatstack.png',
       name: 'GreatStack',
+    },
+    {
+      certificate: '/assets/resume/salesforceachievement.png',
+      name: 'Salesforce',
     },
   ]
 };
@@ -337,7 +325,7 @@ const Resume = () => {
                           onMouseLeave={() => setHoveredIndex(null)}>
                             {hoveredIndex === index && item.certificate && (
                           <div className="relative h-[160px] flex justify-center items-center">
-                            <img src={item.certificate} alt="Certificate" className="max-w-full max-h-full object-contain rounded-lg" />
+                            <img src={item.certificate} alt="Certificate" className="w-full h-full rounded-xl object-cover" />
                           </div>
                           )}
                         <span className="text-accent">{item.duration}</span>
@@ -395,7 +383,7 @@ const Resume = () => {
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
                     <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                      <img src={item.certificate} alt={item.name} className="h-full w-auto rounded-xl object-contain hover:h-[300px]" />
+                      <img src={item.certificate} alt={item.name} className="w-full h-full rounded-xl object-cover" />
                     </TooltipTrigger>
                     <TooltipContent>
                       <p className="capitalize">{item.name}</p>
@@ -411,30 +399,31 @@ const Resume = () => {
 
 
             <TabsContent value="achievements" className="w-full h-full">
-      <div className="flex flex-col gap-[30px]">
-        <div className="flex flex-col gap-[30px] text-center xl:text-left">
-          <h3 className="text-4xl font-bold mb-10">{achievements.title}</h3>
-        </div>
-        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 xl:gap-[30px]">
-          {achievements.items.map((item, index) => {
-            return (
-              <li key={index}>
-                <TooltipProvider delayDuration={100}>
-                  <Tooltip>
-                    <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                      <img src={item.certificate} alt={item.name} className="h-full w-auto rounded-xl object-contain" />
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p className="capitalize">{item.name}</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-            </TabsContent>
+  <div className="flex flex-col gap-[30px]">
+    <div className="flex flex-col gap-[30px] text-center xl:text-left">
+      <h3 className="text-4xl font-bold mb-10">{achievements.title}</h3>
+    </div>
+    <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 xl:gap-[30px]">
+      {achievements.items.map((item, index) => {
+        return (
+          <li key={index}>
+            <TooltipProvider delayDuration={100}>
+              <Tooltip>
+                <TooltipTrigger className="w-full h-[200px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                  <img src={item.certificate} alt={item.name} className="w-full h-full rounded-xl object-cover" />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p className="capitalize">{item.name}</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+</TabsContent>
+
 
 
 
