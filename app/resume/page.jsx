@@ -68,7 +68,8 @@ const experience = {
     {
       company: "International Travel Network",
       position: "GDS Expert",
-      duration: "Dec 2018 - Jan 2021"
+      duration: "Dec 2018 - Jan 2021",
+      certificate: '/assets/resume/ITN.png'
     },
   ]
 };
@@ -198,6 +199,14 @@ const onlinecourses = {
     {
       certificate: '/assets/resume/springboot.png',
       name: 'Spring Boot',
+    },
+    {
+      certificate: '/assets/resume/javadevelopment.png',
+      name: 'Java Full Stack Development',
+    },
+    {
+      certificate: '/assets/resume/javaspring.png',
+      name: 'Java Spring Framework',
     },
     {
       certificate: '/assets/resume/softwaredevelopment.png',
