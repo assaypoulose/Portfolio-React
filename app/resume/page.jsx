@@ -56,12 +56,14 @@ const experience = {
     {
       company: "Dyninno Group - Innovative Travel Solutions",
       position: "Junior Full Stack Developer",
-      duration: "Jun 2022 - Jan 2024"
+      duration: "Jun 2022 - Jan 2024",
+      certificate: '/assets/resume/ITS.png'
     },
     {
       company: "Richmark Group",
       position: "Logistics Operations Manager",
-      duration: "Feb 2021 - May 2022"
+      duration: "Feb 2021 - May 2022",
+      certificate: '/assets/resume/Richmark.png'
     },
     {
       company: "International Travel Network",
@@ -294,7 +296,16 @@ const Resume = () => {
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => {
                       return (
-                        <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex-col justify-center items-center lg:items-start gap-1">
+                        <li 
+                          key={index} 
+                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex-col justify-center items-center lg:items-start gap-1 overflow-hidden"
+                          onMouseEnter={() => setHoveredIndex(index)}
+                          onMouseLeave={() => setHoveredIndex(null)}>
+                            {hoveredIndex === index && item.certificate && (
+                          <div className="relative h-[160px] flex justify-center items-center">
+                            <img src={item.certificate} alt="Certificate" className="w-full h-full rounded-xl object-cover" />
+                          </div>
+                          )}
                         <span className="text-accent">{item.duration}</span>
                         <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                         <div className="flex items-center gap-3">
@@ -409,8 +420,8 @@ const Resume = () => {
           <li key={index}>
             <TooltipProvider delayDuration={100}>
               <Tooltip>
-                <TooltipTrigger className="w-full h-[200px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                  <img src={item.certificate} alt={item.name} className="w-full h-full rounded-xl object-cover" />
+                <TooltipTrigger className="w-[200px] h-[200px] bg-white rounded-xl flex justify-center items-center group">
+                  <img src={item.certificate} alt={item.name} className="w-full h-fit rounded-xl object-cover" />
                 </TooltipTrigger>
                 <TooltipContent>
                   <p className="capitalize">{item.name}</p>
