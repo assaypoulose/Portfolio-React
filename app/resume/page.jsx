@@ -263,7 +263,7 @@ const achievements = {
       name: 'Salesforce',
     },
     {
-      certificate: '/assets/resume/Leetcode.png',
+      certificate: '/assets/resume/leetcode.png',
       name: 'Leetcode',
     },
   ]
