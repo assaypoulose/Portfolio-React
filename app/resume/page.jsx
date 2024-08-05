@@ -217,6 +217,10 @@ const onlinecourses = {
       name: 'GIT',
     },
     {
+      certificate: '/assets/resume/Docker.png',
+      name: 'Docker',
+    },
+    {
       certificate: '/assets/resume/javafundamentals.png',
       name: 'Java Fundamentals',
     },
@@ -257,6 +261,10 @@ const achievements = {
     {
       certificate: '/assets/resume/salesforceachievement.png',
       name: 'Salesforce',
+    },
+    {
+      certificate: '/assets/resume/leetcode.png',
+      name: 'Leetcode',
     },
   ]
 };
@@ -300,8 +308,8 @@ const Resume = () => {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3> 
+                <ScrollArea className="h-[550px]">
                 <p className="max-w-[700px] text-white/60 mx-auto xl:mx-0 text-justify ">{experience.description}</p>
-                <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => {
                       return (
@@ -334,7 +342,7 @@ const Resume = () => {
             <TabsContent value="education" className="w-full">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <ScrollArea className="h-[400px]">
+                <ScrollArea className="h-[450px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => {
                       return (
@@ -369,6 +377,7 @@ const Resume = () => {
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold mb-10">{skills.title}</h3>
                 </div>
+                <ScrollArea className="h-[550px]">
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
                   {skills.skillList.map((item,index) => {
                     return (
@@ -387,6 +396,7 @@ const Resume = () => {
                     )
                   })}
                 </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
 
@@ -396,6 +406,7 @@ const Resume = () => {
         <div className="flex flex-col gap-[30px] text-center xl:text-left">
           <h3 className="text-4xl font-bold mb-10">{onlinecourses.title}</h3>
         </div>
+        <ScrollArea className="h-[550px]">
         <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 xl:gap-[30px]">
           {onlinecourses.items.map((item, index) => {
             return (
@@ -414,6 +425,7 @@ const Resume = () => {
             );
           })}
         </ul>
+        </ScrollArea>
       </div>
             </TabsContent>
 
@@ -423,13 +435,14 @@ const Resume = () => {
     <div className="flex flex-col gap-[30px] text-center xl:text-left">
       <h3 className="text-4xl font-bold mb-10">{achievements.title}</h3>
     </div>
+    <ScrollArea className="h-[550px]">
     <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 xl:gap-[30px]">
       {achievements.items.map((item, index) => {
         return (
           <li key={index}>
             <TooltipProvider delayDuration={100}>
               <Tooltip>
-                <TooltipTrigger className="w-[200px] h-[200px] bg-white rounded-xl flex justify-center items-center group">
+                <TooltipTrigger className="w-[200px] h-[200px] bg-white rounded-xl flex justify-center overflow-hidden items-center group">
                   <img src={item.certificate} alt={item.name} className="w-full h-fit rounded-xl object-cover" />
                 </TooltipTrigger>
                 <TooltipContent>
@@ -441,6 +454,7 @@ const Resume = () => {
         );
       })}
     </ul>
+    </ScrollArea>
   </div>
 </TabsContent>
 
