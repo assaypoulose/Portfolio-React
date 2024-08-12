@@ -201,6 +201,10 @@ const onlinecourses = {
       name: 'Spring Boot',
     },
     {
+      certificate: '/assets/resume/javafundamentals.png',
+      name: 'Java Fundamentals',
+    },
+    {
       certificate: '/assets/resume/javadevelopment.png',
       name: 'Java Full Stack Development',
     },
@@ -221,8 +225,11 @@ const onlinecourses = {
       name: 'Docker',
     },
     {
-      certificate: '/assets/resume/javafundamentals.png',
-      name: 'Java Fundamentals',
+      certificate: '/assets/resume/Jenkins.png',
+      name: 'Jenkins',
+    },{
+      certificate: '/assets/resume/Kubernetes.png',
+      name: 'Kubernetes',
     },
     {
       certificate: '/assets/resume/sqlfundamentals.png',
