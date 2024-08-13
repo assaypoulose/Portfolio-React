@@ -57,7 +57,7 @@ const experience = {
       company: "Dyninno Group - Innovative Travel Solutions",
       position: "Junior Full Stack Developer",
       duration: "Jun 2022 - Jan 2024",
-      certificate: '/assets/resume/.png'
+      certificate: '/assets/resume/ITS.png'
     },
     {
       company: "Richmark Group",
