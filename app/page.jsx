@@ -19,7 +19,7 @@ const Home = () => {
             </h1>
           <p className="max-w-[500px] mb-9 text-white/80">I excel in coding and developing web applications using React.js and Next.js. Proficient in various programming languages and technologies. Certified Full-Stack Developer and holds credentials as an AWS Solutions Architect Associate and Oracle Java Foundations Associate.</p>
           <div className="flex flex-col xl:flex-row items-center gap-8">
-          <a href="/assets/resume/Resume.pdf" download="Resume.pdf">
+          <a href="/assets/resume/CV-AssayPoulose.pdf" download="CV-AssayPoulose.pdf.pdf">
             <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
               Download CV
               {/* <Link href='/assets/resume/Resume.pdf' target="_blank">Download CV</Link> */}

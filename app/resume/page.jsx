@@ -49,9 +49,15 @@ const experience = {
   description: 'Collaborated with senior developers to develop and maintain web applications for ASAP Tickets and Skylux Travel. Ensured code reliability and quality through unit testing, bug fixing, and developed new features. Worked with databases such as MongoDB and MariaDB to store and retrieve data.  Utilized my skills in TypeScript, GraphQL and REST to create efficient and scalable applications. My role also involved working on CI/CD processes with Docker and using Git for repository hosting and collaboration. Participated actively in daily stand-ups, sprint planning, retrospective meetings, and pair programming to ensure effective team collaboration and project progression. Collaborate with cross-functional teams to design and implement software solutions using technologies like Next.js, Node.js, and React.',
   items: [
     {
+      company: "Internship",
+      position: "Web Development Intern",
+      duration: "Aug 2024 - Present",
+      certificate: '/assets/resume/UnifiedMentor.png'
+    },
+    {
       company: "Freelance",
       position: "Web Developer",
-      duration: "Feb 2024 - Present"
+      duration: "Feb 2024 - Jul 2024"
     },
     {
       company: "Dyninno Group - Innovative Travel Solutions",
