@@ -219,6 +219,14 @@ const onlinecourses = {
       name: 'Java Spring Framework',
     },
     {
+      certificate: '/assets/resume/Angular.png',
+      name: 'Angular',
+    },
+    {
+      certificate: '/assets/resume/Typescript.png',
+      name: 'Typescript',
+    },
+    {
       certificate: '/assets/resume/softwaredevelopment.png',
       name: 'Software Development',
     },
