@@ -17,11 +17,15 @@ import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
 const URL1= "https://food-delivery-frontend-pguf.onrender.com";
 const URL2 = "https://amazon-clone-pi-navy.vercel.app";
 const URL3 = "https://amazon-web-scraping.vercel.app";
+const URL4 = "https://career-page-1.onrender.com/"
+const URL5 = "https://clinic-booking-frontend.onrender.com/"
 
 
 const GITHUB1 = "https://github.com/assaypoulose/food-delivery-app.git"
 const GITHUB2 = "https://github.com/assaypoulose/Amazon-Clone.git"
 const GITHUB3 = "https://github.com/assaypoulose/Web-Scraping-Amazon.git"
+const GITHUB4 = "https://github.com/assaypoulose/Career-Page.git"
+const GITHUB5 = "https://github.com/assaypoulose/Hospital-Appointment-Booking.git"
 
 const projects = [
   {
@@ -50,6 +54,24 @@ const projects = [
     image: '/assets/work/thumb3.png',
     live: `${URL3}`,
     github: `${GITHUB3}`,
+  },
+  {
+    num: '04',
+    category: 'Full-Stack',
+    title: 'Career-Page Web Application',
+    description: "Developed an advanced Job-Portal and here you can filter job listings by title, location, posting time, and more. Implement user authentication and registration using email, password, or even your Gmail account. Allow registered users to post, edit, and manage their job listings. Implement pagination and craft an awesome UI for an outstanding user experience.",
+    image: '/assets/work/thumb4.png',
+    live: `${URL4}`,
+    github: `${GITHUB4}`,
+  },
+  {
+    num: '05',
+    category: 'Full-Stack',
+    title: 'Hostial Appointment Booking Web Application',
+    description: "This full stack appointment booking system can be used by a doctor or a hospital. Because in this project I have created 3 level of authentication. 1st one is for Patients, so that patient can login on the website, book appointment with doctor and manage the booked appointment. 2nd one is doctor login, so that doctor can login and check the appointment and their earning. Doctor can update their profile also from dashboard. 3rd one is Admin Dashboard where admin can manages the appointment and admin can also manage the doctor profile.",
+    image: '/assets/work/thumb5.png',
+    live: `${URL5}`,
+    github: `${GITHUB5}`,
   },
 ]
 

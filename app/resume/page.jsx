@@ -2,11 +2,11 @@
 
 import React, { useState } from 'react';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaGit, FaNodeJs, FaJava, FaDocker, FaAws } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiVisualstudiocode, SiMongodb , SiMysql, SiGraphql, SiSpringboot, SiExpress, SiKubernetes, SiHibernate, SiPhp  } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiVisualstudiocode, SiMongodb , SiMysql, SiGraphql, SiSpringboot, SiExpress, SiKubernetes, SiHibernate, SiPhp, SiDotnet, SiCsharp  } from "react-icons/si";
 
 const about = {
   title: 'About me',
-  description: "Full Stack Developer specialized in MERN Stack with 2 years of experience in coding and developing web applications using React.js and Next.js. Certified Full-Stack Developer and holds credentials as an AWS Solutions Architect Associate and Oracle Java Foundations Associate. I am also a Salesforce development enthusiast.",
+  description: "Full Stack Developer specialized in MERN Stack with 2.5 years of experience in coding and developing Reac.js web applications project using Vite . Certified Full-Stack Developer and holds credentials as Oracle Certified Java Foundations Associate. Hands on experience as an AWS Solutions Architect Associate. I am also a Salesforce development enthusiast.",
   info: [
     {
       fieldName: "Name",
@@ -22,7 +22,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "2 years"
+      fieldValue: "2.5 years"
     },
     {
       fieldName: "Nationality",
@@ -46,12 +46,12 @@ const about = {
 const experience = {
   icon: '/assets/resume/badge.svg',
   title: 'My Experience',
-  description: 'Collaborated with senior developers to develop and maintain web applications for ASAP Tickets and Skylux Travel. Ensured code reliability and quality through unit testing, bug fixing, and developed new features. Worked with databases such as MongoDB and MariaDB to store and retrieve data.  Utilized my skills in TypeScript, GraphQL and REST to create efficient and scalable applications. My role also involved working on CI/CD processes with Docker and using Git for repository hosting and collaboration. Participated actively in daily stand-ups, sprint planning, retrospective meetings, and pair programming to ensure effective team collaboration and project progression. Collaborate with cross-functional teams to design and implement software solutions using technologies like Next.js, Node.js, and React.',
+  description: 'Collaborated with senior developers to develop and maintain web applications for ASAP Tickets and Skylux Travel. Ensured code reliability and quality through unit testing, bug fixing, and developed new features. Worked with databases such as MongoDB and MariaDB to store and retrieve data. Utilized my skills in various programing languages and REST-APIs to create efficient and scalable applications. My role also involved working on CI/CD processes with Docker and using Git for repository hosting and collaboration. Participated actively in daily stand-ups, sprint planning, retrospective meetings, and pair programming to ensure effective team collaboration and project progression. Collaborate with cross-functional teams to design and implement software solutions using technologies like Next.js, Node.js, and React.',
   items: [
     {
       company: "Internship",
       position: "Web Development Intern",
-      duration: "Aug 2024 - Present",
+      duration: "Aug 2024 - Oct 2024",
       certificate: '/assets/resume/UnifiedMentor.png'
     },
     {
@@ -166,6 +166,14 @@ const skills = {
     {
       icon: <FaJava />,
       name: 'Java',
+    },
+    {
+      icon: <SiDotnet />,
+      name: '.NET',
+    },
+    {
+      icon: <SiCsharp />,
+      name: 'C#',
     },
     {
       icon: <SiSpringboot />,
