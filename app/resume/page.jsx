@@ -1,57 +1,66 @@
 "use client";
 
 import React, { useState } from 'react';
-import { FaHtml5, FaCss3, FaJs, FaReact, FaGit, FaNodeJs, FaJava, FaDocker, FaAws } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiVisualstudiocode, SiMongodb , SiMysql, SiGraphql, SiSpringboot, SiExpress, SiKubernetes, SiHibernate, SiPhp, SiDotnet, SiCsharp  } from "react-icons/si";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaGit, FaNodeJs, FaJava, FaDocker, FaAws, FaSalesforce } from "react-icons/fa";
+import { SiTailwindcss, SiNextdotjs, SiVisualstudiocode, SiMongodb , SiMysql, SiGraphql , SiSpringboot, SiExpress, SiKubernetes, SiHibernate, SiPhp, SiDotnet, SiCsharp, SiC, SiPython  } from "react-icons/si";
 
-const about = {
-  title: 'About me',
-  description: "Full Stack Developer specialized in MERN Stack with 2.5 years of experience in coding and developing Reac.js web applications project using Vite . Certified Full-Stack Developer and holds credentials as Oracle Certified Java Foundations Associate. Hands on experience as an AWS Solutions Architect Associate. I am also a Salesforce development enthusiast.",
-  info: [
-    {
-      fieldName: "Name",
-      fieldValue: "Assay Poulose Peenikkaparamban"
-    },
-    {
-      fieldName: "Phone",
-      fieldValue: "(+49) 176 834 66693"
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "assaypoulose16@gmail.com"
-    },
-    {
-      fieldName: "Experience",
-      fieldValue: "2.5 years"
-    },
-    {
-      fieldName: "Nationality",
-      fieldValue: "Indian"
-    },
-    {
-      fieldName: "Residence",
-      fieldValue: "Germany"
-    },
-    {
-      fieldName: "Freelance",
-      fieldValue: "Available"
-    },
-    {
-      fieldName: "Languages",
-      fieldValue: "English, Hindi, German"
-    }
-  ]
-};
+
+// const about = {
+//   title: 'About me',
+//   description: "Skilled in customizing Salesforce to automate business workflows and enhance customer engagement, while building responsive web applications using React.js, Node.js, and AWS. Adept at data analysis, project coordination, and cross-functional collaboration. Seeking roles in Salesforce administration or CRM-integrated full stack development to support digital transformation and customer success.",
+//   info: [
+//     {
+//       fieldName: "Name",
+//       fieldValue: "Assay Poulose Peenikkaparamban"
+//     },
+//     {
+//       fieldName: "Phone",
+//       fieldValue: "(+49) 176 834 66693"
+//     },
+//     {
+//       fieldName: "Email",
+//       fieldValue: "assaypoulose16@gmail.com"
+//     },
+//     {
+//       fieldName: "Experience",
+//       fieldValue: "5 years"
+//     },
+//     {
+//       fieldName: "Nationality",
+//       fieldValue: "Indian"
+//     },
+//     {
+//       fieldName: "Residence",
+//       fieldValue: "Germany"
+//     },
+//     {
+//       fieldName: "Availability",
+//       fieldValue: "Immediately"
+//     },
+//     {
+//       fieldName: "Languages",
+//       fieldValue: "English, German"
+//     },
+//     {
+//       fieldName: "German Work Permit",
+//       fieldValue: "Familiennachzug zum Ehemann gem. § 18g AufenthG. Erwerbstätigkeit erlaubt"
+//     },
+//     {
+//       fieldName: "D.O.B",
+//       fieldValue: "16/07/1993"
+//     }
+//   ]
+// };
 
 const experience = {
   icon: '/assets/resume/badge.svg',
   title: 'My Experience',
-  description: 'Collaborated with senior developers to develop and maintain web applications for ASAP Tickets and Skylux Travel. Ensured code reliability and quality through unit testing, bug fixing, and developed new features. Worked with databases such as MongoDB and MariaDB to store and retrieve data. Utilized my skills in various programing languages and REST-APIs to create efficient and scalable applications. My role also involved working on CI/CD processes with Docker and using Git for repository hosting and collaboration. Participated actively in daily stand-ups, sprint planning, retrospective meetings, and pair programming to ensure effective team collaboration and project progression. Collaborate with cross-functional teams to design and implement software solutions using technologies like Next.js, Node.js, and React.',
+  description: 'Brings over 5 years of experience in project management, sales and client-facing roles, with a successful transition over the past year into web development and Salesforce CRM administration and development. Combines strong business acumen with technical skills to build user-centric web applications and optimize CRM systems for efficiency and growth.',
   items: [
     {
       company: "Internship",
       position: "Web Development Intern",
-      duration: "Aug 2024 - Oct 2024",
+      duration: "Aug 2024 - Nov 2024",
       certificate: '/assets/resume/UnifiedMentor.png'
     },
     {
@@ -62,7 +71,8 @@ const experience = {
     {
       company: "Dyninno Group - Innovative Travel Solutions",
       position: "Project Manager",
-      duration: "Jun 2022 - Jan 2024"
+      duration: "Jun 2022 - Jan 2024",
+      certificate: '/assets/resume/ProjectManager.png'
     },
     {
       company: "Richmark Group",
@@ -70,12 +80,12 @@ const experience = {
       duration: "Feb 2021 - May 2022",
       certificate: '/assets/resume/Richmark.png'
     },
-    {
-      company: "International Travel Network",
-      position: "GDS Expert",
-      duration: "Dec 2018 - Jan 2021",
-      certificate: '/assets/resume/ITN.png'
-    },
+    // {
+    //   company: "International Travel Network",
+    //   position: "GDS Expert",
+    //   duration: "Dec 2018 - Jan 2021",
+    //   certificate: '/assets/resume/ITN.png'
+    // },
   ]
 };
 
@@ -83,29 +93,6 @@ const education = {
   icon: '/assets/resume/cap.svg',
   title: 'My Education',
   items: [
-    {
-      institution: "AWS",
-      degree: "AWS Solutions Architect (SAA-C03)",
-      duration: "2024"
-    },
-    {
-      institution: "Oracle",
-      degree: "Java Foundations Associate (1Z0-811)",
-      duration: "2024",
-      certificate: '/assets/resume/oracle.png'
-    },
-    {
-      institution: "Code Institute",
-      degree: "AACC Certified",
-      duration: "2024",
-      certificate: '/assets/resume/aacc.png'
-    },
-    {
-      institution: "Online Course Platform - Guvi",
-      degree: "Full Stack Development Bootcamp",
-      duration: "2022",
-      certificate: '/assets/resume/guvi.png'
-    },
     {
       institution: "Riga Technical University",
       degree: "Master of Science",
@@ -150,10 +137,10 @@ const skills = {
       icon: <FaReact />,
       name: 'react.js',
     },
-    {
-      icon: <SiNextdotjs />,
-      name: 'next.js',
-    },
+    // {
+    //   icon: <SiNextdotjs />,
+    //   name: 'next.js',
+    // },
     {
       icon: <FaNodeJs />,
       name: 'node.js',
@@ -163,21 +150,33 @@ const skills = {
       name: 'Ecpress.js',
     },
     {
+      icon: <SiMongodb />,
+      name: 'MongoDB',
+    },
+    {
       icon: <FaJava />,
       name: 'Java',
     },
     {
-      icon: <SiDotnet />,
-      name: '.NET',
+      icon: <SiC />,
+      name: 'C',
     },
     {
-      icon: <SiCsharp />,
-      name: 'C#',
+      icon: <SiPython />,
+      name: 'Python',
     },
-    {
-      icon: <SiSpringboot />,
-      name: 'Spring Boot',
-    },
+    // {
+    //   icon: <SiDotnet />,
+    //   name: '.NET',
+    // },
+    // {
+    //   icon: <SiCsharp />,
+    //   name: 'C#',
+    // },
+    // {
+    //   icon: <SiSpringboot />,
+    //   name: 'Spring Boot',
+    // },
     {
       icon: <FaGit />,
       name: 'Git',
@@ -187,21 +186,20 @@ const skills = {
       name: 'VS Code',
     },
     {
-      icon: <SiMongodb />,
-      name: 'MongoDB',
-    },
-    {
       icon: <SiMysql />,
       name: 'MySQL',
     },
     {
       icon: <FaAws />,
       name: 'AWS',
+    },{
+      icon: <FaSalesforce />,
+      name: 'Salesforce',
     },
-    {
-      icon: <FaDocker />,
-      name: 'Docker',
-    },
+    // {
+    //   icon: <FaDocker />,
+    //   name: 'Docker',
+    // },
   ]
 
 }
@@ -210,68 +208,88 @@ const onlinecourses = {
   title: 'Online Course Certifications',
   items: [
     {
-      certificate: '/assets/resume/springboot.png',
-      name: 'Spring Boot',
+      institution: "Salesforce",
+      name: "Certified AI Associate",
+      duration: "2025",
+      certificate: '/assets/resume/AIAssociate.png'
     },
     {
-      certificate: '/assets/resume/javafundamentals.png',
-      name: 'Java Fundamentals',
+      institution: "Salesforce",
+      name: "Certified Agentforce Specialist",
+      duration: "2025",
+      certificate: '/assets/resume/Agentforce.png'
     },
     {
-      certificate: '/assets/resume/javadevelopment.png',
-      name: 'Java Full Stack Development',
+      institution: "Oracle",
+      name: "Java Foundations Associate (1Z0-811)",
+      duration: "2024",
+      certificate: '/assets/resume/oracle.png'
     },
     {
-      certificate: '/assets/resume/javaspring.png',
-      name: 'Java Spring Framework',
+      institution: "Online Course Platform - Guvi",
+      name: "Full Stack Development Bootcamp",
+      duration: "2022",
+      certificate: '/assets/resume/guvi.png'
     },
-    {
-      certificate: '/assets/resume/Angular.png',
-      name: 'Angular',
-    },
-    {
-      certificate: '/assets/resume/Typescript.png',
-      name: 'Typescript',
-    },
-    {
-      certificate: '/assets/resume/softwaredevelopment.png',
-      name: 'Software Development',
-    },
-    {
-      certificate: '/assets/resume/git.png',
-      name: 'GIT',
-    },
-    {
-      certificate: '/assets/resume/Docker.png',
-      name: 'Docker',
-    },
-    {
-      certificate: '/assets/resume/Jenkins.png',
-      name: 'Jenkins',
-    },{
-      certificate: '/assets/resume/Kubernetes.png',
-      name: 'Kubernetes',
-    },
-    {
-      certificate: '/assets/resume/sqlfundamentals.png',
-      name: 'SQL Fundamentals',
-    },
-    {
-      certificate: '/assets/resume/sql.png',
-      name: 'SQL',
-    },
-    {
-      certificate: '/assets/resume/postgersql.png',
-      name: 'PostgerSQL',
-    },
-    {
-      certificate: '/assets/resume/python.png',
-      name: 'Python',
-    },
-    {
-      certificate: '/assets/resume/salesforce.png',
-      name: 'Salesforce Administrator',
-    },
+  //   {
+  //     certificate: '/assets/resume/javafundamentals.png',
+  //     name: 'Java Fundamentals',
+  //   },
+  //   {
+  //     certificate: '/assets/resume/javadevelopment.png',
+  //     name: 'Java Full Stack Development',
+  //   },
+  //   {
+  //     certificate: '/assets/resume/javaspring.png',
+  //     name: 'Java Spring Framework',
+  //   },
+  //   {
+  //     certificate: '/assets/resume/Angular.png',
+  //     name: 'Angular',
+  //   },
+  //   {
+  //     certificate: '/assets/resume/Typescript.png',
+  //     name: 'Typescript',
+  //   },
+  //   {
+  //     certificate: '/assets/resume/softwaredevelopment.png',
+  //     name: 'Software Development',
+  //   },
+  //   {
+  //     certificate: '/assets/resume/git.png',
+  //     name: 'GIT',
+  //   },
+  //   {
+  //     certificate: '/assets/resume/Docker.png',
+  //     name: 'Docker',
+  //   },
+  //   {
+  //     certificate: '/assets/resume/Jenkins.png',
+  //     name: 'Jenkins',
+  //   },{
+  //     certificate: '/assets/resume/Kubernetes.png',
+  //     name: 'Kubernetes',
+  //   },
+  //   {
+  //     certificate: '/assets/resume/sqlfundamentals.png',
+  //     name: 'SQL Fundamentals',
+  //   },
+  //   {
+  //     certificate: '/assets/resume/sql.png',
+  //     name: 'SQL',
+  //   },
+  //   {
+  //     certificate: '/assets/resume/postgersql.png',
+  //     name: 'PostgerSQL',
+  //   },
+  //   {
+  //     certificate: '/assets/resume/python.png',
+  //     name: 'Python',
+  //   },
+  //   {
+  //     certificate: '/assets/resume/salesforce.png',
+  //     name: 'Salesforce Administrator',
+  //   },
   ],
 };
 
@@ -279,21 +297,39 @@ const achievements = {
   title: 'Achievements',
   items: [
     {
+      certificate: '/assets/resume/Agentblazer.png',
+      name: 'Agentblazer Champion',
+    },
+    {
+        certificate: '/assets/resume/Superbadge.png',
+        name: 'Agentforce for Service Superbadge',
+    },
+    {
       certificate: '/assets/resume/javaexplorer.png',
       name: 'Java Explorer',
+    },
+    {
+        certificate: '/assets/resume/springboot.png',
+        name: 'Spring Boot',
     },
     {
       certificate: '/assets/resume/greatstack.png',
       name: 'GreatStack',
     },
     {
-      certificate: '/assets/resume/salesforceachievement.png',
-      name: 'Salesforce',
+      institution: "Code Institute",
+      name: "AACC Certified",
+      duration: "2024",
+      certificate: '/assets/resume/aacc.png'
     },
-    {
-      certificate: '/assets/resume/leetcode.png',
-      name: 'Leetcode',
-    },
+    // {
+    //   certificate: '/assets/resume/salesforceachievement.png',
+    //   name: 'Salesforce',
+    // },
+    // {
+    //   certificate: '/assets/resume/leetcode.png',
+    //   name: 'Leetcode',
+    // },
   ]
 };
 
@@ -335,9 +371,9 @@ const Resume = () => {
 
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{experience.title}</h3> 
+                <h3 className="text-4xl text-center font-bold">{experience.title}</h3> 
                 <ScrollArea className="h-[550px]">
-                <p className="max-w-[700px] text-white/60 mx-auto xl:mx-0 text-justify ">{experience.description}</p>
+                <p className="max-w-[700px] text-white/60 mx-auto xl:mx-0 text-justify mb-8 ">{experience.description}</p>
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => {
                       return (
@@ -489,22 +525,43 @@ const Resume = () => {
 
 
 
-            <TabsContent value="about" className="w-full text-center xl:text-left">
-              <div className="flex flex-col gap-[30px]">
-                <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[700px] text-white/60 mx-auto xl:mx-0 text-justify">{about.description}</p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[720px] mx-auto xl:mx-0">
-                  {about.info.map((item,index) => {
-                    return (
-                      <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
-                        <span className="text-white/60">{item.fieldName}</span>
-                        <span className="text-xl">{item.fieldValue}</span>
-                      </li>
-                    )
-                  })}
-                </ul>
-              </div>
-            </TabsContent>
+<TabsContent value="about" className="w-full text-center xl:text-left">
+  <div className="flex flex-col gap-6">
+    <h3 className="text-4xl font-bold">About Me</h3>
+    <p className="max-w-[700px] text-white/70 mx-auto xl:mx-0 text-justify leading-relaxed">
+      Skilled in customizing Salesforce to automate business workflows and enhance customer engagement, while building responsive web applications using React.js, Node.js, and AWS. Adept at data analysis, project coordination, and cross-functional collaboration. Seeking roles in Salesforce administration or CRM-integrated full stack development to support digital transformation and customer success.
+    </p>
+
+    <div className="max-w-[720px] mx-auto xl:mx-0 space-y-4">
+      <div className=" text-white/60">
+        <span className="font-medium">Name: </span>
+        <span className="text-white font-semibold">Assay Poulose Peenikkaparamban</span>
+      </div>
+      <div className=" text-white/60">
+        <span className="font-medium">Nationality: </span>
+        <span className="text-white font-semibold">Indian</span>
+      </div>
+      <div className=" text-white/60">
+        <span className="font-medium">Availability: </span>
+        <span className="text-white font-semibold">Immediately</span>
+      </div>
+      <div className=" text-white/60">
+        <span className="font-medium">Languages: </span>
+        <span className="text-white font-semibold">English, Hindi, German</span>
+      </div>
+      <div className=" text-white/60">
+        <span className="font-medium">Work Authorization: </span>
+        <span className="text-white font-semibold">Authorized to work in Germany</span>
+      </div>
+      <div className=" text-white/60">
+        <span className="font-medium">Permit: </span>
+        <span className="text-white font-semibold">Familiennachzug zum Ehemann gem. § 18g AufenthG. Erwerbstätigkeit erlaubt</span>
+      </div>
+    </div>
+  </div>
+</TabsContent>
+
+
 
 
           </div>

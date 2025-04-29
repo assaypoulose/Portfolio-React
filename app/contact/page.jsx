@@ -93,7 +93,7 @@ const Contact = () => {
           <div className="xl:w-[64%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl" onSubmit={submitForm}>
               <h3 className="text-4xl text-accent">Get in Touch</h3>
-              <p className="text-white/60">Let's connect! If you're looking for a committed and skilled Full-Stack Developer, I am ready to contribute to your team's success.</p>
+              <p className="text-white/60 text-center">Let's connect!</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input type="text" name="firstname" placeholder="Firstname" value={formData.firstname} onChange={handleChange} />
                 <Input type="text" name="lastname" placeholder="Lastname" value={formData.lastname} onChange={handleChange} />

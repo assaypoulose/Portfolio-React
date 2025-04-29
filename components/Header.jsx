@@ -5,11 +5,11 @@ import { Button } from "./ui/button";
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 text-white ">
+    <header className="py-8 text-white ">
         <div className="contsiner mx-auto flex justify-between items-center ">
             <Link href={"/"} >
                 <h1 className="text-4xl font-semibold ">
-                Assay<span className="text-accent">.</span>
+                Portfolio<span className="text-accent">.</span>
                 </h1>
             </Link>
         

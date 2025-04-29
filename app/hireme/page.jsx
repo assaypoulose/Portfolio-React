@@ -65,7 +65,7 @@ const HireMe = () => {
             <div className="container mx-auto">
                 <div className="text-center mb-10">
                     {/* <h1 className="text-5xl font-bold text-accent mb-4">Hire Me</h1> */}
-                    <p className="text-white/80 text-lg">Looking for a committed and skilled Full-Stack Developer? Let's work together to bring your vision to life!</p>
+                    <p className="text-white/80 text-lg">If you're looking for a committed and skilled colleague as a Salesforce Admin/Developer, I am ready to contribute to your team's success.</p>
                 </div>
 
                 {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
