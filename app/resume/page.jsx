@@ -209,6 +209,12 @@ const onlinecourses = {
   items: [
     {
       institution: "Salesforce",
+      name: "Certified Administrator",
+      duration: "2025",
+      certificate: '/assets/resume/Adminstrator.png'
+    },
+    {
+      institution: "Salesforce",
       name: "Certified AI Associate",
       duration: "2025",
       certificate: '/assets/resume/AIAssociate.png'
