@@ -55,7 +55,7 @@ import { SiTailwindcss, SiNextdotjs, SiVisualstudiocode, SiMongodb , SiMysql, Si
 const experience = {
   icon: '/assets/resume/badge.svg',
   title: 'My Experience',
-  description: 'Brings over 5 years of experience in project management, sales and client-facing roles, with a successful transition over the past year into web development and Salesforce CRM administration and development. Combines strong business acumen with technical skills to build user-centric web applications and optimize CRM systems for efficiency and growth.',
+  description: 'My diverse background spans over 5 years in Web development, Project & CMS management, logistics operations, sales, and client-facing roles, all of which enrich my perspective as a Salesforce Admin and Developer.',
   items: [
     {
       company: "Internship",
@@ -79,6 +79,18 @@ const experience = {
       position: "Logistics Operations Manager",
       duration: "Feb 2021 - May 2022",
       certificate: '/assets/resume/Richmark.png'
+    },
+    {
+      company: "Universal Business Systems (UBS)",
+      position: "Independent Freelance Contractor",
+      duration: "Feb 2019 - Jan 2022",
+      certificate: '/assets/resume/UBS.png'
+    },
+    {
+      company: "International Travel Network (ITN)",
+      position: "Independent Travel Agent",
+      duration: "Nov 2018 - Jan 2019",
+      certificate: '/assets/resume/ITN.png'
     },
     // {
     //   company: "International Travel Network",
@@ -303,13 +315,17 @@ const achievements = {
   title: 'Achievements',
   items: [
     {
+      certificate: '/assets/resume/innovator.png',
+      name: 'Agentblazer Innovator',
+    },
+    {
       certificate: '/assets/resume/Agentblazer.png',
       name: 'Agentblazer Champion',
     },
-    {
-        certificate: '/assets/resume/Superbadge.png',
-        name: 'Agentforce for Service Superbadge',
-    },
+    // {
+    //     certificate: '/assets/resume/Superbadge.png',
+    //     name: 'Agentforce for Service Superbadge',
+    // },
     {
       certificate: '/assets/resume/javaexplorer.png',
       name: 'Java Explorer',
@@ -535,7 +551,7 @@ const Resume = () => {
   <div className="flex flex-col gap-6">
     <h3 className="text-4xl font-bold">About Me</h3>
     <p className="max-w-[700px] text-white/70 mx-auto xl:mx-0 text-justify leading-relaxed">
-      Skilled in customizing Salesforce to automate business workflows and enhance customer engagement, while building responsive web applications using React.js, Node.js, and AWS. Adept at data analysis, project coordination, and cross-functional collaboration. Seeking roles in Salesforce administration or CRM-integrated full stack development to support digital transformation and customer success.
+      What drives me is the thrill of simplifying complexity—whether that’s designing seamless workflows or connecting systems that never spoke before. Learning is at the heart of everything I do; every Flow, every line of Apex, and every Trailhead badge adds to my toolkit and fuels my growth.
     </p>
 
     <div className="max-w-[720px] mx-auto xl:mx-0 space-y-4">

@@ -17,7 +17,10 @@ const Home = () => {
             Hello I'm <br /> <span className="text-accent">Assay Poulose Peenikkaparamban</span>
             </h1>
             <span className="text-xl text-white/90">Salesforce Administrator & Full Stack Developer</span>
-            <p className="max-w-[700px] text-sm mt-4 mb-4 text-white/80 text-justify">I enjoy working with in Salesforce platform with a low code to no code strategies to improve business processes, automate workflows, and support sales and service operations. My passion for coding made me a Full-Stack Developer skilled in transforming great designs into fast, responsive web applications with hands-on experience in React.js, Express.js, Node.js, MongoDB and AWS. Skilled in building scalable and efficient solutions that users love. Brings over 5 years of experience in CRM management, project development, sales and client-facing roles.</p>
+            <p className="max-w-[700px] text-sm mt-4 mb-4 text-white/80 text-justify">I love turning “we have a problem” into “here’s your solution.” With hands-on experience gained through countless hours on Trailhead, I specialize in streamlining business processes, automating workflows, integrating third-party systems, and supporting sales and service operations. Exploring Salesforce’s latest innovations— Einstein Analytics, AgentForce and Sales Coach features as an AgentBlazer Champion and Innovator. Currently, I’m deepening my expertise in CPQ.
+            <br />
+            Beyond Salesforce, I’m a Full-Stack Developer with a solid foundation in React.js, Express.js, Node.js, MongoDB, and AWS. I enjoy bringing well-crafted designs to life through fast, responsive, and scalable web applications that users truly appreciate.</p>
+        
             <div className="flex mt-10 flex-col xl:flex-row items-center gap-8">
               <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
                 Download CV
