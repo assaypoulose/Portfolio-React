@@ -221,6 +221,12 @@ const onlinecourses = {
   items: [
     {
       institution: "Salesforce",
+      name: "Certified CPQ Specialist",
+      duration: "2025",
+      certificate: '/assets/resume/CPQ.png'
+    },
+    {
+      institution: "Salesforce",
       name: "Certified Administrator",
       duration: "2025",
       certificate: '/assets/resume/Adminstrator.png'

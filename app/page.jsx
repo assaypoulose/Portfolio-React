@@ -17,7 +17,7 @@ const Home = () => {
             Hello I'm <br /> <span className="text-accent">Assay Poulose Peenikkaparamban</span>
             </h1>
             <span className="text-xl text-white/90">Salesforce Administrator & Full Stack Developer</span>
-            <p className="max-w-[700px] text-sm mt-4 mb-4 text-white/80 text-justify">I love turning “we have a problem” into “here’s your solution.” With hands-on experience gained through countless hours on Trailhead, I specialize in streamlining business processes, automating workflows, integrating third-party systems, and supporting sales and service operations. Exploring Salesforce’s latest innovations— Einstein Analytics, AgentForce and Sales Coach features as an AgentBlazer Champion and Innovator. Currently, I’m deepening my expertise in CPQ.
+            <p className="max-w-[700px] text-sm mt-4 mb-4 text-white/80 text-justify">I love turning “we have a problem” into “here’s your solution.” With hands-on experience gained through countless hours on Trailhead, I specialize in streamlining business processes, automating workflows, integrating third-party systems, and supporting sales and service operations. Exploring Salesforce’s latest innovations— Einstein Analytics, AgentForce and Sales Coach features as an AgentBlazer Champion and Innovator. Currently, I’m deepening my expertise in CPQ & Platform Developer.
             <br />
             Beyond Salesforce, I’m a Full-Stack Developer with a solid foundation in React.js, Express.js, Node.js, MongoDB, and AWS. I enjoy bringing well-crafted designs to life through fast, responsive, and scalable web applications that users truly appreciate.</p>
         

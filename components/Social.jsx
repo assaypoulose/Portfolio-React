@@ -9,7 +9,7 @@ const socials = [
     { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/assay-poulose-peenikkaparamban-961911179"},
     // { icon: <SiLeetcode />, path: "https://leetcode.com/u/assaypoulose"},
     { icon: <FaSalesforce />, path: "https://www.salesforce.com/trailblazer/assaypoulosepeenikkaparamban"},
-    { icon: <SiXing />, path: "https://leetcode.com/u/assaypoulose"},
+    { icon: <SiXing />, path: "https://www.xing.com/profile/AssayPoulose_Peenikkaparamban"},
 ];
 
 const Social = ({containerStyles, iconStyles }) => {
